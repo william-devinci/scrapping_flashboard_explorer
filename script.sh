@@ -20,7 +20,7 @@ function send(){
         chat_id="CHAT_ID"
         url_telegram="https://api.telegram.org/botKEY/sendMessage?parse_mode=HTML"
 
-        curl --data chat_id=$chat_id --data-urlencode "text=${validator}, ${reward}" $url_telegram
+        curl --data chat_id=$chat_id --data-urlencode "text=${date} -- ${validator}, ${reward}" $url_telegram
 
 }
 
