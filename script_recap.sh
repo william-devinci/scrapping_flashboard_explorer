@@ -2,6 +2,7 @@
 
 date=$(date '+%Y-%m-%d')
 filename=$(echo "${date}.txt")
+filename_recap=$(echo "${date}-recap.txt")
 
 
 reward=0
@@ -20,6 +21,7 @@ do
         fi
 done
 
+echo "${reward}" > $filename_recap
 chat_id="CHAT_ID"
 url_telegram="https://api.telegram.org/botKEY/sendMessage?parse_mode=HTML"
 
